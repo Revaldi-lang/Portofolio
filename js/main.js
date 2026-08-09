@@ -48,8 +48,7 @@
   window.addEventListener("resize", onScroll, { passive: true });
   onScroll();
 
-  const slider = document.getElementById("food-slider");
-  if (slider) {
+  document.querySelectorAll(".project-slider").forEach((slider) => {
     const track = slider.querySelector(".project-slider__track");
     const slides = slider.querySelectorAll(".project-slider__slide");
     const dots = slider.querySelectorAll(".project-slider__dot");
@@ -130,5 +129,5 @@
     window.addEventListener("touchmove", onMove, { passive: true });
     window.addEventListener("touchend", onEnd);
     window.addEventListener("touchcancel", onEnd);
-  }
+  });
 })();
