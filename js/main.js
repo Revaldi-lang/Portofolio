@@ -48,6 +48,35 @@
   window.addEventListener("resize", onScroll, { passive: true });
   onScroll();
 
+  const projectGrid = document.getElementById("project-grid");
+  if (projectGrid) {
+    const prevBtn = document.getElementById("project-prev");
+    const nextBtn = document.getElementById("project-next");
+
+    const step = () => {
+      const card = projectGrid.querySelector(".project-card");
+      return card ? card.offsetWidth + 24 : projectGrid.clientWidth;
+    };
+
+    const updateControls = () => {
+      const maxScroll = projectGrid.scrollWidth - projectGrid.clientWidth - 1;
+      prevBtn.disabled = projectGrid.scrollLeft <= 0;
+      nextBtn.disabled = projectGrid.scrollLeft >= maxScroll;
+    };
+
+    prevBtn.addEventListener("click", () => {
+      projectGrid.scrollBy({ left: -step(), behavior: "smooth" });
+    });
+
+    nextBtn.addEventListener("click", () => {
+      projectGrid.scrollBy({ left: step(), behavior: "smooth" });
+    });
+
+    projectGrid.addEventListener("scroll", updateControls, { passive: true });
+    window.addEventListener("resize", updateControls);
+    updateControls();
+  }
+
   document.querySelectorAll(".project-slider").forEach((slider) => {
     const track = slider.querySelector(".project-slider__track");
     const slides = slider.querySelectorAll(".project-slider__slide");

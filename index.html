@@ -153,12 +153,18 @@
 
     <section class="section section--alt" id="project">
       <div class="container">
-        <header class="section__head">
-          <h2 class="section__title">Project</h2>
-          <p class="section__subtitle">Beberapa project yang pernah saya kerjakan.</p>
+        <header class="section__head section__head--controls">
+          <div>
+            <h2 class="section__title">Project</h2>
+            <p class="section__subtitle">Beberapa project yang pernah saya kerjakan.</p>
+          </div>
+          <div class="project-controls" id="project-controls">
+            <button class="project-controls__btn" id="project-prev" type="button" aria-label="Geser ke project sebelumnya">&#8249;</button>
+            <button class="project-controls__btn" id="project-next" type="button" aria-label="Geser ke project berikutnya">&#8250;</button>
+          </div>
         </header>
 
-        <div class="project-grid">
+        <div class="project-grid" id="project-grid">
           <article class="project-card">
             <div class="project-card__media">
               <img
