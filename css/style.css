@@ -437,6 +437,116 @@ ul {
   transform: scale(1.05);
 }
 
+/* Project slider */
+.project-slider {
+  cursor: grab;
+  touch-action: pan-y;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.project-slider.is-dragging {
+  cursor: grabbing;
+}
+
+.project-slider__track {
+  display: flex;
+  height: 100%;
+  transition: transform 0.4s var(--ease);
+  will-change: transform;
+}
+
+.project-slider.is-dragging .project-slider__track {
+  transition: none;
+}
+
+.project-slider__slide {
+  flex: 0 0 100%;
+  min-width: 100%;
+  height: 100%;
+}
+
+.project-slider__slide img {
+  pointer-events: none;
+}
+
+.project-card:hover .project-slider__slide img,
+.project-slider__slide img {
+  transform: none;
+}
+
+.project-slider__btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  padding: 0 0 2px;
+  border: none;
+  border-radius: 50%;
+  font-size: 24px;
+  line-height: 1;
+  color: var(--color-text);
+  background-color: rgba(255, 255, 255, 0.85);
+  box-shadow: var(--shadow-sm);
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.2s var(--ease), background-color 0.2s var(--ease);
+}
+
+.project-card:hover .project-slider__btn,
+.project-slider__btn:focus-visible {
+  opacity: 1;
+}
+
+.project-slider__btn:hover {
+  background-color: #ffffff;
+}
+
+.project-slider__btn--prev {
+  left: 10px;
+}
+
+.project-slider__btn--next {
+  right: 10px;
+}
+
+.project-slider__dots {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 5;
+  display: flex;
+  gap: 6px;
+}
+
+.project-slider__dot {
+  width: 8px;
+  height: 8px;
+  padding: 0;
+  border: none;
+  border-radius: 999px;
+  background-color: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+  transition: width 0.2s var(--ease), background-color 0.2s var(--ease);
+}
+
+.project-slider__dot.is-active {
+  width: 20px;
+  background-color: #ffffff;
+}
+
+@media (hover: none) {
+  .project-slider__btn {
+    opacity: 1;
+  }
+}
+
 .animated-button {
   position: absolute;
   top: 50%;
