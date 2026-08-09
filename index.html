@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Revaldi Firdaus — Web Developer</title>
+
+  <meta name="description" content="Portofolio Revaldi Firdaus — Web Developer dengan pengalaman membangun aplikasi web modern, fokus pada performa dan clean code.">
+  <meta name="author" content="Revaldi Firdaus">
+  <meta name="keywords" content="Revaldi Firdaus, Web Developer, Portfolio, HTML, CSS, JavaScript, React, Node.js">
+  <meta name="theme-color" content="#f8f9fa">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Revaldi Firdaus — Web Developer">
+  <meta property="og:description" content="Web Developer dengan pengalaman membangun aplikasi web modern, fokus pada performa dan clean code.">
+  <meta property="og:image" content="assets/images/profile.jpg">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Revaldi Firdaus — Web Developer">
+  <meta name="twitter:description" content="Web Developer dengan pengalaman membangun aplikasi web modern.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header" id="site-header">
+    <nav class="container nav" aria-label="Navigasi utama">
+      <a class="nav__brand" href="#tentang">Revaldi<span>.</span></a>
+
+      <ul class="nav__links" id="nav-links">
+        <li><a class="nav__link is-active" href="#tentang">Tentang</a></li>
+        <li><a class="nav__link" href="#tech-stack">Tech Stack</a></li>
+        <li><a class="nav__link" href="#project">Project</a></li>
+        <li><a class="nav__link" href="#kontak">Kontak</a></li>
+        <li><a class="btn btn--primary btn--sm nav__resume" href="#" target="_blank" rel="noopener">Resume</a></li>
+      </ul>
+
+      <button class="nav__toggle" id="nav-toggle" type="button" aria-label="Buka menu" aria-expanded="false" aria-controls="nav-links">
+        <span class="nav__toggle-bar"></span>
+        <span class="nav__toggle-bar"></span>
+        <span class="nav__toggle-bar"></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="tentang">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <h1 class="hero__title">Revaldi Firdaus</h1>
+          <p class="hero__desc">
+            Full-Stack Web Developer specializing in end-to-end web
+            application development, robust backend systems, and data-driven
+            solutions. Driven by performance, clean architecture, and
+            intuitive user experiences.
+          </p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#project">Lihat Project</a>
+            <a class="btn btn--outline" href="#kontak">Hubungi Saya</a>
+          </div>
+        </div>
+        <div class="hero__media">
+          <img
+            class="hero__photo"
+            src="assets/images/profile.jpg"
+            alt="Foto profil Revaldi Firdaus"
+            width="320"
+            height="320"
+            fetchpriority="high"
+          >
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="tech-stack">
+      <div class="container">
+        <header class="section__head section__head--center">
+          <h2 class="section__title">Tech Stack</h2>
+          <p class="section__subtitle">Teknologi dan tools yang saya kuasai.</p>
+        </header>
+
+        <div class="stack-card">
+          <div class="stack-card__items">
+            <div class="stack-item" title="HTML5">
+              <span class="stack-item__icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="HTML5" width="26" height="26" loading="lazy"></span>
+              <span class="stack-item__name">HTML5</span>
+            </div>
+            <div class="stack-item" title="CSS3">
+              <span class="stack-item__icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="CSS3" width="26" height="26" loading="lazy"></span>
+              <span class="stack-item__name">CSS3</span>
+            </div>
+            <div class="stack-item" title="JavaScript">
+              <span class="stack-item__icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="JavaScript" width="26" height="26" loading="lazy"></span>
+              <span class="stack-item__name">JavaScript</span>
+            </div>
+            <div class="stack-item" title="TypeScript">
+              <span class="stack-item__icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" alt="TypeScript" width="26" height="26" loading="lazy"></span>
+              <span class="stack-item__name">TypeScript</span>
+            </div>
+            <div class="stack-item" title="React">
+              <span class="stack-item__icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="React" width="26" height="26" loading="lazy"></span>
+              <span class="stack-item__name">React</span>
+            </div>
+            <div class="stack-item" title="Next.js">
+              <span class="stack-item__icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg" alt="Next.js" width="26" height="26" loading="lazy"></span>
+              <span class="stack-item__name">Next.js</span>
+            </div>
+            <div class="stack-item" title="Python">
+              <span class="stack-item__icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="Python" width="26" height="26" loading="lazy"></span>
+              <span class="stack-item__name">Python</span>
+            </div>
+            <div class="stack-item" title="Java">
+              <span class="stack-item__icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" alt="Java" width="26" height="26" loading="lazy"></span>
+              <span class="stack-item__name">Java</span>
+            </div>
+            <div class="stack-item" title="MySQL">
+              <span class="stack-item__icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" alt="MySQL" width="26" height="26" loading="lazy"></span>
+              <span class="stack-item__name">MySQL</span>
+            </div>
+            <div class="stack-item" title="PostgreSQL">
+              <span class="stack-item__icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" width="26" height="26" loading="lazy"></span>
+              <span class="stack-item__name">PostgreSQL</span>
+            </div>
+            <div class="stack-item" title="Supabase">
+              <span class="stack-item__icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/supabase/supabase-original.svg" alt="Supabase" width="26" height="26" loading="lazy"></span>
+              <span class="stack-item__name">Supabase</span>
+            </div>
+            <div class="stack-item" title="Playwright">
+              <span class="stack-item__icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/playwright/playwright-original.svg" alt="Playwright" width="26" height="26" loading="lazy"></span>
+              <span class="stack-item__name">Playwright</span>
+            </div>
+            <div class="stack-item" title="Jira">
+              <span class="stack-item__icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jira/jira-original.svg" alt="Jira" width="26" height="26" loading="lazy"></span>
+              <span class="stack-item__name">Jira</span>
+            </div>
+            <div class="stack-item" title="Docker">
+              <span class="stack-item__icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" alt="Docker" width="26" height="26" loading="lazy"></span>
+              <span class="stack-item__name">Docker</span>
+            </div>
+            <div class="stack-item" title="Figma">
+              <span class="stack-item__icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" alt="Figma" width="26" height="26" loading="lazy"></span>
+              <span class="stack-item__name">Figma</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="project">
+      <div class="container">
+        <header class="section__head">
+          <h2 class="section__title">Project</h2>
+          <p class="section__subtitle">Beberapa project yang pernah saya kerjakan.</p>
+        </header>
+
+        <div class="project-grid">
+          <article class="project-card">
+            <div class="project-card__media">
+              <img
+                src="assets/images/project-dashboard.jpg"
+                alt="Tampilan platform SIGAP"
+                loading="lazy"
+                width="640"
+                height="360"
+              >
+              <a class="animated-button" href="https://sigap-liard.vercel.app/" target="_blank" rel="noopener" aria-label="Kunjungi website SIGAP">
+                <svg xmlns="http://www.w3.org/2000/svg" class="arr-2" viewBox="0 0 24 24">
+                  <path
+                    d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                  ></path>
+                </svg>
+                <span class="text">E N T R Y</span>
+                <span class="circle"></span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="arr-1" viewBox="0 0 24 24">
+                  <path
+                    d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">SIGAP</h3>
+              <p class="project-card__desc">
+                SIGAP adalah platform pelayanan pengaduan dan aspirasi
+                infrastruktur publik yang terintegrasi, dirancang untuk
+                mempercepat koordinasi antara masyarakat umum dan instansi
+                pemerintah daerah.
+              </p>
+              <ul class="project-card__icons">
+                <li title="Next.js">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg" alt="Next.js" width="20" height="20" loading="lazy">
+                </li>
+                <li title="TypeScript">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" alt="TypeScript" width="20" height="20" loading="lazy">
+                </li>
+                <li title="Tailwind CSS">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind CSS" width="20" height="20" loading="lazy">
+                </li>
+                <li title="Supabase">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/supabase/supabase-original.svg" alt="Supabase" width="20" height="20" loading="lazy">
+                </li>
+                <li title="Leaflet">
+                  <img src="https://cdn.simpleicons.org/leaflet/199900" alt="Leaflet" width="20" height="20" loading="lazy">
+                </li>
+              </ul>
+              <div class="project-card__links">
+                <a class="btn-github" href="https://github.com/Revaldi-lang/SIGAP" target="_blank" rel="noopener">
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M7.99992 1.33331C7.12444 1.33331 6.25753 1.50575 5.4487 1.84078C4.63986 2.17581 3.90493 2.66688 3.28587 3.28593C2.03563 4.53618 1.33325 6.23187 1.33325 7.99998C1.33325 10.9466 3.24659 13.4466 5.89325 14.3333C6.22659 14.3866 6.33325 14.18 6.33325 14C6.33325 13.8466 6.33325 13.4266 6.33325 12.8733C4.48659 13.2733 4.09325 11.98 4.09325 11.98C3.78659 11.2066 3.35325 11 3.35325 11C2.74659 10.5866 3.39992 10.6 3.39992 10.6C4.06659 10.6466 4.41992 11.2866 4.41992 11.2866C4.99992 12.3 5.97992 12 6.35992 11.84C6.41992 11.4066 6.59325 11.1133 6.77992 10.9466C5.29992 10.78 3.74659 10.2066 3.74659 7.66665C3.74659 6.92665 3.99992 6.33331 4.43325 5.85998C4.36659 5.69331 4.13325 4.99998 4.49992 4.09998C4.49992 4.09998 5.05992 3.91998 6.33325 4.77998C6.85992 4.63331 7.43325 4.55998 7.99992 4.55998C8.56659 4.55998 9.13992 4.63331 9.66659 4.77998C10.9399 3.91998 11.4999 4.09998 11.4999 4.09998C11.8666 4.99998 11.6333 5.69331 11.5666 5.85998C11.9999 6.33331 12.2533 6.92665 12.2533 7.66665C12.2533 10.2133 10.6933 10.7733 9.20659 10.94C9.44659 11.1466 9.66659 11.5533 9.66659 12.1733C9.66659 13.0666 9.66659 13.7866 9.66659 14C9.66659 14.18 9.77325 14.3933 10.1133 14.3333C12.7599 13.44 14.6666 10.9466 14.6666 7.99998C14.6666 7.1245 14.4941 6.25759 14.1591 5.44876C13.8241 4.63992 13.333 3.90499 12.714 3.28593C12.0949 2.66688 11.36 2.17581 10.5511 1.84078C9.7423 1.50575 8.8754 1.33331 7.99992 1.33331V1.33331Z"
+                      fill="currentcolor"
+                    ></path>
+                  </svg>
+                  <span>View on GitHub</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card__media">
+              <img
+                src="assets/images/project-taskflow.jpg"
+                alt="Tampilan Allure Store"
+                loading="lazy"
+                width="640"
+                height="360"
+              >
+              <a class="animated-button" href="https://allurez.store/" target="_blank" rel="noopener" aria-label="Kunjungi website Allure Store">
+                <svg xmlns="http://www.w3.org/2000/svg" class="arr-2" viewBox="0 0 24 24">
+                  <path
+                    d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                  ></path>
+                </svg>
+                <span class="text">E N T R Y</span>
+                <span class="circle"></span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="arr-1" viewBox="0 0 24 24">
+                  <path
+                    d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">Allure Store</h3>
+              <p class="project-card__desc">
+                Storefront digital berkonsep Vintage Aesthetic untuk layanan
+                akun premium (CapCut Pro, Canva Pro, Netflix 4K, ChatGPT Plus,
+                Spotify Premium, dll.).
+              </p>
+              <ul class="project-card__icons">
+                <li title="Next.js">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg" alt="Next.js" width="20" height="20" loading="lazy">
+                </li>
+                <li title="TypeScript">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" alt="TypeScript" width="20" height="20" loading="lazy">
+                </li>
+                <li title="React">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="React" width="20" height="20" loading="lazy">
+                </li>
+              </ul>
+              <div class="project-card__links">
+                <a class="btn-github" href="https://github.com/Revaldi-lang/web-jualan-allure" target="_blank" rel="noopener">
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M7.99992 1.33331C7.12444 1.33331 6.25753 1.50575 5.4487 1.84078C4.63986 2.17581 3.90493 2.66688 3.28587 3.28593C2.03563 4.53618 1.33325 6.23187 1.33325 7.99998C1.33325 10.9466 3.24659 13.4466 5.89325 14.3333C6.22659 14.3866 6.33325 14.18 6.33325 14C6.33325 13.8466 6.33325 13.4266 6.33325 12.8733C4.48659 13.2733 4.09325 11.98 4.09325 11.98C3.78659 11.2066 3.35325 11 3.35325 11C2.74659 10.5866 3.39992 10.6 3.39992 10.6C4.06659 10.6466 4.41992 11.2866 4.41992 11.2866C4.99992 12.3 5.97992 12 6.35992 11.84C6.41992 11.4066 6.59325 11.1133 6.77992 10.9466C5.29992 10.78 3.74659 10.2066 3.74659 7.66665C3.74659 6.92665 3.99992 6.33331 4.43325 5.85998C4.36659 5.69331 4.13325 4.99998 4.49992 4.09998C4.49992 4.09998 5.05992 3.91998 6.33325 4.77998C6.85992 4.63331 7.43325 4.55998 7.99992 4.55998C8.56659 4.55998 9.13992 4.63331 9.66659 4.77998C10.9399 3.91998 11.4999 4.09998 11.4999 4.09998C11.8666 4.99998 11.6333 5.69331 11.5666 5.85998C11.9999 6.33331 12.2533 6.92665 12.2533 7.66665C12.2533 10.2133 10.6933 10.7733 9.20659 10.94C9.44659 11.1466 9.66659 11.5533 9.66659 12.1733C9.66659 13.0666 9.66659 13.7866 9.66659 14C9.66659 14.18 9.77325 14.3933 10.1133 14.3333C12.7599 13.44 14.6666 10.9466 14.6666 7.99998C14.6666 7.1245 14.4941 6.25759 14.1591 5.44876C13.8241 4.63992 13.333 3.90499 12.714 3.28593C12.0949 2.66688 11.36 2.17581 10.5511 1.84078C9.7423 1.50575 8.8754 1.33331 7.99992 1.33331V1.33331Z"
+                      fill="currentcolor"
+                    ></path>
+                  </svg>
+                  <span>View on GitHub</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card__media">
+              <img
+                src="assets/images/project-fintech.jpg"
+                alt="Ilustrasi arsitektur FinTech API Gateway"
+                loading="lazy"
+                width="640"
+                height="360"
+              >
+            </div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">FinTech API Gateway</h3>
+              <p class="project-card__desc">
+                API gateway skalabel untuk transaksi keuangan dengan autentikasi
+                aman dan throughput tinggi.
+              </p>
+              <ul class="project-card__tags">
+                <li>Express</li>
+                <li>Redis</li>
+                <li>Docker</li>
+              </ul>
+              <div class="project-card__links">
+                <a class="link" href="#" target="_blank" rel="noopener">Demo</a>
+                <a class="link" href="#" target="_blank" rel="noopener">GitHub</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="kontak">
+      <div class="container container--narrow">
+        <header class="section__head section__head--center">
+          <h2 class="section__title">Hubungi Saya</h2>
+          <p class="section__subtitle">
+            Punya project atau hanya ingin menyapa? Hubungi saya lewat media
+            sosial berikut.
+          </p>
+        </header>
+
+        <div class="contact-social">
+          <a
+            class="Btn Btn--linkedin"
+            href="https://www.linkedin.com/in/revaldi-f-3b6183320/"
+            target="_blank"
+            rel="noopener"
+            aria-label="LinkedIn Revaldi Firdaus"
+          >
+            <span class="svgContainer">
+              <svg
+                viewBox="0 0 448 512"
+                height="1.6em"
+                xmlns="http://www.w3.org/2000/svg"
+                class="svgIcon"
+                fill="white"
+              >
+                <path d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"></path>
+              </svg>
+            </span>
+            <span class="BG"></span>
+          </a>
+          <a
+            class="Btn"
+            href="https://github.com/Revaldi-lang"
+            target="_blank"
+            rel="noopener"
+            aria-label="GitHub Revaldi Firdaus"
+          >
+            <span class="svgContainer">
+              <svg fill="white" viewBox="0 0 496 512" height="1.6em"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg>
+            </span>
+            <span class="BG"></span>
+          </a>
+          <a
+            class="Btn Btn--instagram"
+            href="https://www.instagram.com/revaldifds/"
+            target="_blank"
+            rel="noopener"
+            aria-label="Instagram Revaldi Firdaus"
+          >
+            <span class="svgContainer">
+              <svg
+                fill="white"
+                class="svgIcon"
+                viewBox="0 0 448 512"
+                height="1.5em"
+                xmlns="http://www.w3.org/2000/svg"
+              ><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg>
+            </span>
+            <span class="BG"></span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <span class="site-footer__brand">Revaldi<span>.</span></span>
+      <p class="site-footer__copy">&copy; 2026 Revaldi Firdaus.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+# Local config — can contain secrets (API keys, tokens). Never commit.
+opencode.json
+opencode.jsonc
+
+# Screenshots — local previews, not part of the site
+*.png
