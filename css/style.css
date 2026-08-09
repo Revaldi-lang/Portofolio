@@ -414,6 +414,121 @@ ul {
   color: var(--color-text-muted);
 }
 
+/* Tech Stack decorations */
+.section--stack {
+  position: relative;
+  overflow: hidden;
+}
+
+.section--stack .container {
+  position: relative;
+  z-index: 1;
+}
+
+.stack-decor {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.stack-decor__icon {
+  position: absolute;
+  opacity: 0.16;
+  filter: grayscale(1);
+  animation: stack-float 8s ease-in-out infinite;
+}
+
+.stack-decor__icon:nth-child(1) {
+  top: 10%;
+  left: 4%;
+  width: 72px;
+  height: 72px;
+  animation-delay: 0s;
+}
+
+.stack-decor__icon:nth-child(2) {
+  top: 20%;
+  right: 4%;
+  width: 60px;
+  height: 60px;
+  animation-delay: -1.5s;
+}
+
+.stack-decor__icon:nth-child(3) {
+  top: 42%;
+  left: 2%;
+  width: 84px;
+  height: 84px;
+  animation-delay: -2.5s;
+}
+
+.stack-decor__icon:nth-child(4) {
+  top: 40%;
+  right: 2%;
+  width: 68px;
+  height: 68px;
+  animation-delay: -0.8s;
+}
+
+.stack-decor__icon:nth-child(5) {
+  bottom: 16%;
+  left: 7%;
+  width: 64px;
+  height: 64px;
+  animation-delay: -3.2s;
+}
+
+.stack-decor__icon:nth-child(6) {
+  bottom: 10%;
+  right: 5%;
+  width: 80px;
+  height: 80px;
+  animation-delay: -2s;
+}
+
+.stack-decor__icon:nth-child(7) {
+  top: 6%;
+  right: 16%;
+  width: 52px;
+  height: 52px;
+  animation-delay: -4s;
+}
+
+.stack-decor__icon:nth-child(8) {
+  bottom: 26%;
+  left: 16%;
+  width: 48px;
+  height: 48px;
+  animation-delay: -1s;
+}
+
+.stack-decor__icon:nth-child(9) {
+  bottom: 20%;
+  right: 16%;
+  width: 56px;
+  height: 56px;
+  animation-delay: -2.8s;
+}
+
+.stack-decor__icon:nth-child(10) {
+  top: 34%;
+  left: 16%;
+  width: 48px;
+  height: 48px;
+  animation-delay: -5s;
+}
+
+@keyframes stack-float {
+  0%,
+  100% {
+    transform: translateY(0) rotate(-4deg);
+  }
+  50% {
+    transform: translateY(-16px) rotate(4deg);
+  }
+}
+
 /* Tech Stack */
 .stack-card {
   width: fit-content;
@@ -1159,6 +1274,21 @@ ul {
   .section__head:not(.section__head--center) .section__subtitle {
     margin-left: auto;
     margin-right: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .stack-decor__icon {
+    opacity: 0.1;
+  }
+
+  .stack-decor__icon:nth-child(3),
+  .stack-decor__icon:nth-child(4),
+  .stack-decor__icon:nth-child(7),
+  .stack-decor__icon:nth-child(8),
+  .stack-decor__icon:nth-child(9),
+  .stack-decor__icon:nth-child(10) {
+    display: none;
   }
 }
 
