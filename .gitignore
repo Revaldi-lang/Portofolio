@@ -5,3 +5,4 @@ opencode.jsonc
 # Screenshots — local previews, not part of the site
 *.png
 !assets/images/*.png
+!assets/favicon-cat.png
