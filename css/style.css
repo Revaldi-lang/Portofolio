@@ -519,6 +519,70 @@ ul {
   animation-delay: -5s;
 }
 
+.stack-decor__icon:nth-child(11) {
+  top: 56%;
+  left: 8%;
+  width: 58px;
+  height: 58px;
+  animation-delay: -0.5s;
+}
+
+.stack-decor__icon:nth-child(12) {
+  top: 58%;
+  right: 8%;
+  width: 62px;
+  height: 62px;
+  animation-delay: -3.6s;
+}
+
+.stack-decor__icon:nth-child(13) {
+  top: 12%;
+  left: 26%;
+  width: 54px;
+  height: 54px;
+  animation-delay: -1.2s;
+}
+
+.stack-decor__icon:nth-child(14) {
+  top: 18%;
+  right: 26%;
+  width: 50px;
+  height: 50px;
+  animation-delay: -4.5s;
+}
+
+.stack-decor__icon:nth-child(15) {
+  bottom: 34%;
+  left: 24%;
+  width: 56px;
+  height: 56px;
+  animation-delay: -2.2s;
+}
+
+.stack-decor__icon:nth-child(16) {
+  bottom: 8%;
+  left: 24%;
+  width: 60px;
+  height: 60px;
+  animation-delay: -0.4s;
+}
+
+.stack-decor__icon:nth-child(17) {
+  bottom: 32%;
+  right: 22%;
+  width: 52px;
+  height: 52px;
+  animation-delay: -3.8s;
+}
+
+.stack-decor__icon:nth-child(18) {
+  bottom: 6%;
+  right: 24%;
+  width: 58px;
+  height: 58px;
+  animation-delay: -1.7s;
+}
+
 @keyframes stack-float {
   0%,
   100% {
@@ -1288,7 +1352,15 @@ ul {
   .stack-decor__icon:nth-child(7),
   .stack-decor__icon:nth-child(8),
   .stack-decor__icon:nth-child(9),
-  .stack-decor__icon:nth-child(10) {
+  .stack-decor__icon:nth-child(10),
+  .stack-decor__icon:nth-child(11),
+  .stack-decor__icon:nth-child(12),
+  .stack-decor__icon:nth-child(13),
+  .stack-decor__icon:nth-child(14),
+  .stack-decor__icon:nth-child(15),
+  .stack-decor__icon:nth-child(16),
+  .stack-decor__icon:nth-child(17),
+  .stack-decor__icon:nth-child(18) {
     display: none;
   }
 }
