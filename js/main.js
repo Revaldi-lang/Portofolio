@@ -104,18 +104,20 @@
   }
 
   document.querySelectorAll(".project-slider").forEach((slider) => {
+    const screen = slider.querySelector(".project-card__screen");
     const track = slider.querySelector(".project-slider__track");
     const slides = slider.querySelectorAll(".project-slider__slide");
     const dots = slider.querySelectorAll(".project-slider__dot");
     const prevBtn = slider.querySelector(".project-slider__btn--prev");
     const nextBtn = slider.querySelector(".project-slider__btn--next");
+    const slideWidth = () => slides[0].offsetWidth;
     let index = 0;
     let startX = 0;
     let currentX = 0;
     let isDragging = false;
 
     const update = () => {
-      track.style.transform = `translateX(-${index * 100}%)`;
+      track.style.transform = `translateX(${-index * slideWidth()}px)`;
       dots.forEach((dot, i) => {
         const active = i === index;
         dot.classList.toggle("is-active", active);
@@ -158,7 +160,7 @@
       currentX = event.touches ? event.touches[0].clientX : event.clientX;
       const dx = currentX - startX;
       track.style.transition = "none";
-      track.style.transform = `translateX(${-index * slider.offsetWidth + dx}px)`;
+      track.style.transform = `translateX(${-index * slideWidth() + dx}px)`;
     };
 
     const onEnd = () => {
@@ -166,7 +168,7 @@
       isDragging = false;
       slider.classList.remove("is-dragging");
       const dx = currentX - startX;
-      const threshold = slider.offsetWidth * 0.2;
+      const threshold = slideWidth() * 0.2;
       if (dx > threshold && index > 0) {
         index -= 1;
       } else if (dx < -threshold && index < slides.length - 1) {
@@ -176,11 +178,11 @@
       update();
     };
 
-    slider.addEventListener("mousedown", onStart);
+    screen.addEventListener("mousedown", onStart);
     window.addEventListener("mousemove", onMove);
     window.addEventListener("mouseup", onEnd);
-    slider.addEventListener("mouseleave", onEnd);
-    slider.addEventListener("touchstart", onStart, { passive: true });
+    screen.addEventListener("mouseleave", onEnd);
+    screen.addEventListener("touchstart", onStart, { passive: true });
     window.addEventListener("touchmove", onMove, { passive: true });
     window.addEventListener("touchend", onEnd);
     window.addEventListener("touchcancel", onEnd);
