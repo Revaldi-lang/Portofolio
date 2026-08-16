@@ -1,4 +1,30 @@
 (() => {
+  const themeToggle = document.getElementById("theme-toggle");
+  const metaTheme = document.querySelector('meta[name="theme-color"]');
+
+  const applyTheme = (theme) => {
+    document.documentElement.setAttribute("data-theme", theme);
+    if (themeToggle) {
+      themeToggle.checked = theme !== "dark";
+    }
+    if (metaTheme) {
+      metaTheme.setAttribute(
+        "content",
+        theme === "dark" ? "#0f1115" : "#f8f9fa"
+      );
+    }
+  };
+
+  applyTheme(localStorage.getItem("theme") === "dark" ? "dark" : "light");
+
+  if (themeToggle) {
+    themeToggle.addEventListener("change", () => {
+      const theme = themeToggle.checked ? "light" : "dark";
+      applyTheme(theme);
+      localStorage.setItem("theme", theme);
+    });
+  }
+
   const header = document.getElementById("site-header");
   const navToggle = document.getElementById("nav-toggle");
   const navLinks = document.getElementById("nav-links");
