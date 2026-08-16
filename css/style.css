@@ -962,8 +962,8 @@ ul {
   border-radius: 50%;
   font-size: 24px;
   line-height: 1;
-  color: var(--color-text);
-  background-color: rgba(255, 255, 255, 0.85);
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.78);
   box-shadow: var(--shadow-sm);
   cursor: pointer;
   opacity: 0;
@@ -976,7 +976,7 @@ ul {
 }
 
 .project-slider__btn:hover {
-  background-color: #ffffff;
+  background-color: #000000;
 }
 
 .project-slider__btn--prev {
